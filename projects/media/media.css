@@ -1,0 +1,117 @@
+/*
+  Author: Mary Nicole Tangog
+  Date:   11/21/2026
+
+  Filename:   media.css
+*/
+html {
+	background: url(coffeebackground.png) fixed;
+   background-position: center center;   
+   background-size: cover;
+}
+
+h1 {
+	text-align: center;	
+	color: rgb(255, 210, 177);
+}
+/*NAVIGATION STYLE */
+
+nav.horizontal li {
+	display: block;
+	float: left;
+	position: relative;
+	width: 14.2857%;
+}
+
+nav.horizontal li a {
+	background-color: rgb(54, 34, 2);
+	color: rgb(236, 133, 147);
+	display: block;
+	height: 3em;
+	line-height: 3em;
+	font-size: 1.2em;
+	letter-spacing: 0.15em;
+	text-align: center;
+	width: 100%;
+}
+
+nav.horizontal li:nth-of-type(7) {
+	width: 7.1428%;
+}
+
+nav.horizontal li:nth-of-type(8) {
+	width: 7.1428%;
+}
+
+nav.horizontal li a img {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	width: 60%;
+}
+
+/*section*/
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+section > aside  {
+   color: rgb(255, 255, 255);   
+   margin: 0;
+   background-color: rgba(108, 50, 12, 0.64);
+   box-shadow: inset 15px 15px 25px rgba(101, 101, 101, 0.4),
+               inset -15px -15px 25px rgba(101, 101, 101, 0.4);
+   border-radius: 35px;
+   padding: 35px;
+	position: static;
+	box-sizing: border-box;
+	flex: 1;
+	min-width: 0;
+	max-width: 550px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+section > aside > h1 {
+	
+   font-size: 1.2em;
+   font-weight: normal;
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+/*audio*/
+
+audio {
+	filter: drop-shadow(8px 8px 15px rgb(51, 51, 51));
+	display: block;
+	margin: 10px auto;
+	width: 90%;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    body > section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body > section > aside {
+        width: 100%;
+        max-width: 550px;
+    }
+
+}
+
